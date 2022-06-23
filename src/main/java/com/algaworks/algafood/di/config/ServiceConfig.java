@@ -1,14 +1,10 @@
 package com.algaworks.algafood.di.config;
 
-import com.algaworks.algafood.di.service.AtivacaoClienteService;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
-@Configuration
+//@Configuration
 public class ServiceConfig {
 
-    @Bean(initMethod = "init", destroyMethod = "destroy")
-    public AtivacaoClienteService ativacaoClienteService() {
-        return new AtivacaoClienteService();
-    }
+//    @Bean(initMethod = "init", destroyMethod = "destroy")
+//    public AtivacaoClienteService ativacaoClienteService() {
+//        return new AtivacaoClienteService();
+//    }
 }
