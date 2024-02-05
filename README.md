@@ -27,3 +27,11 @@ Bean é o nome dado a objetos gerenciados pelo container do spring.</p>
 
 A anotação ```@Configuration```  e baseada em ```@Component``` . Com objetivo principal a definição de beans.
 <br><br>A anotação ```@Bean``` indica que o método ele instancia, configura um objeto gerenciado pelo container Spring.
+
+### Pontos de injeção de dependência
+- Construtor
+- Construtor com @Autowired
+- @Autowired
+- Método Setter com @Autowired
+
+Observação.: Em caso de mais de um construtor o Spring não consegue distinguir, qual contrutor utilizar por isso deve se utiliar ```@Autowired``` para indicar.
