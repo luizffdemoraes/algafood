@@ -24,3 +24,6 @@
 <p>Quando rodamos uma aplicação o ioc container e inicializado
 começa a instanciar os beans que ele deve gerenciar.<br>
 Bean é o nome dado a objetos gerenciados pelo container do spring.</p>
+
+A anotação ```@Configuration```  e baseada em ```@Component``` . Com objetivo principal a definição de beans.
+<br><br>A anotação ```@Bean``` indica que o método ele instancia, configura um objeto gerenciado pelo container Spring.
