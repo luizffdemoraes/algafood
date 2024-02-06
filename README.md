@@ -35,3 +35,17 @@ A anotação ```@Configuration```  e baseada em ```@Component``` . Com objetivo 
 - Método Setter com @Autowired
 
 Observação.: Em caso de mais de um construtor o Spring não consegue distinguir, qual contrutor utilizar por isso deve se utiliar ```@Autowired``` para indicar.
+
+### 🐛 Erro de ambiguidade de beans.:
+
+```
+Description:
+
+Field notificador in com.algaworks.algafood.service.AtivacaoClienteService required a single bean, but 2 were found:
+- notificadorEmail: defined in file [C:\Users\luiz9\Documents\workspace-spring-tool-suite-4-4.20.1.RELEASE\algafood-api\target\classes\com\algaworks\algafood\notificacao\NotificadorEmail.class]
+- notificadorSMS: defined in file [C:\Users\luiz9\Documents\workspace-spring-tool-suite-4-4.20.1.RELEASE\algafood-api\target\classes\com\algaworks\algafood\notificacao\NotificadorSMS.class]
+```
+
+### 💡 Solução.:
+
+Adicionar anotação ```@Primary``` em uma das classes que estejam vinculadas para definir a prioridade.
