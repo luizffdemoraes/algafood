@@ -46,6 +46,7 @@ Field notificador in com.algaworks.algafood.service.AtivacaoClienteService requi
 - notificadorSMS: defined in file [C:\Users\luiz9\Documents\workspace-spring-tool-suite-4-4.20.1.RELEASE\algafood-api\target\classes\com\algaworks\algafood\notificacao\NotificadorSMS.class]
 ```
 
-### 💡 Solução.:
+### 💡 Soluções.:
 
-Adicionar anotação ```@Primary``` em uma das classes que estejam vinculadas para definir a prioridade.
+1º Adicionando anotação ```@Primary``` em uma das classes que estejam vinculadas para definir a prioridade. <br>
+2º Adicionando anotação ```@Qualifier``` ela serve para qualificar adicionando um identificador na classe que será injetada e referenciando na classe que receberá injeção de dependência.
