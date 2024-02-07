@@ -49,4 +49,5 @@ Field notificador in com.algaworks.algafood.service.AtivacaoClienteService requi
 ### 💡 Soluções.:
 
 1º Adicionando anotação ```@Primary``` em uma das classes que estejam vinculadas para definir a prioridade. <br>
-2º Adicionando anotação ```@Qualifier``` ela serve para qualificar adicionando um identificador na classe que será injetada e referenciando na classe que receberá injeção de dependência.
+2º Adicionando anotação ```@Qualifier``` ela serve para qualificar adicionando um identificador na classe que será injetada e referenciando na classe que receberá injeção de dependência. <br>
+3º Criando anotação customizada;
