@@ -63,3 +63,7 @@ Métodos de callback para capturar fases de um Bean no Spring.:
 - ```@PostConstruct``` inicialização e ```@PreDestroy``` destruição. 
 - ```@Bean(initMethod = "init", destroyMethod = "destroy")``` 
 - Utilizando ```implements InitializingBean, DisposableBean```
+
+Padrão de projeto Observer.:
+
+Serve para gerar baixo acoplamento
